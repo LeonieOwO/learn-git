@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tests.dir/test/testing.cpp.o -o tests  -ltdd_functions_lib /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 
