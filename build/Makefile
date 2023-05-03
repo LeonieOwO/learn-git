@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /workspaces/learn-git/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -139,66 +129,29 @@ basics_in_Cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/build
 .PHONY : basics_in_Cpp/fast
 
-#=============================================================================
-# Target rules for targets named tests
-
-# Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
-C++/Untericht_2.o: C++/Untericht_2.cpp.o
-.PHONY : C++/Untericht_2.o
+dynamic_memory.o: dynamic_memory.c.o
+.PHONY : dynamic_memory.o
 
 # target to build an object file
-C++/Untericht_2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/C++/Untericht_2.cpp.o
-.PHONY : C++/Untericht_2.cpp.o
+dynamic_memory.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.o
+.PHONY : dynamic_memory.c.o
 
-C++/Untericht_2.i: C++/Untericht_2.cpp.i
-.PHONY : C++/Untericht_2.i
-
-# target to preprocess a source file
-C++/Untericht_2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/C++/Untericht_2.cpp.i
-.PHONY : C++/Untericht_2.cpp.i
-
-C++/Untericht_2.s: C++/Untericht_2.cpp.s
-.PHONY : C++/Untericht_2.s
-
-# target to generate assembly for a file
-C++/Untericht_2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/C++/Untericht_2.cpp.s
-.PHONY : C++/Untericht_2.cpp.s
-
-test/testing.o: test/testing.cpp.o
-.PHONY : test/testing.o
-
-# target to build an object file
-test/testing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/testing.cpp.o
-.PHONY : test/testing.cpp.o
-
-test/testing.i: test/testing.cpp.i
-.PHONY : test/testing.i
+dynamic_memory.i: dynamic_memory.c.i
+.PHONY : dynamic_memory.i
 
 # target to preprocess a source file
-test/testing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/testing.cpp.i
-.PHONY : test/testing.cpp.i
+dynamic_memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.i
+.PHONY : dynamic_memory.c.i
 
-test/testing.s: test/testing.cpp.s
-.PHONY : test/testing.s
+dynamic_memory.s: dynamic_memory.c.s
+.PHONY : dynamic_memory.s
 
 # target to generate assembly for a file
-test/testing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/testing.cpp.s
-.PHONY : test/testing.cpp.s
+dynamic_memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.s
+.PHONY : dynamic_memory.c.s
 
 # Help Target
 help:
@@ -208,15 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... basics_in_Cpp"
-	@echo "... tests"
-	@echo "... C++/Untericht_2.o"
-	@echo "... C++/Untericht_2.i"
-	@echo "... C++/Untericht_2.s"
-	@echo "... test/testing.o"
-	@echo "... test/testing.i"
-	@echo "... test/testing.s"
+	@echo "... dynamic_memory.o"
+	@echo "... dynamic_memory.i"
+	@echo "... dynamic_memory.s"
 .PHONY : help
 
 

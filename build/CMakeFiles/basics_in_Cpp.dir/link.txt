@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/basics_in_Cpp.dir/C++/Untericht_2.cpp.o -o basics_in_Cpp 
+/usr/bin/cc CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.o -o basics_in_Cpp 
