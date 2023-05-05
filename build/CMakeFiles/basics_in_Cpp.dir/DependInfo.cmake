@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspaces/learn-git/dynamic_memory.c" "CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.o" "gcc" "CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.o.d"
+  "/workspaces/learn-git/dynamic_mem2.cpp" "CMakeFiles/basics_in_Cpp.dir/dynamic_mem2.cpp.o" "gcc" "CMakeFiles/basics_in_Cpp.dir/dynamic_mem2.cpp.o.d"
   )
 
 # Targets to which this target links.

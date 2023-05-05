@@ -129,29 +129,29 @@ basics_in_Cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/build
 .PHONY : basics_in_Cpp/fast
 
-dynamic_memory.o: dynamic_memory.c.o
-.PHONY : dynamic_memory.o
+dynamic_mem2.o: dynamic_mem2.cpp.o
+.PHONY : dynamic_mem2.o
 
 # target to build an object file
-dynamic_memory.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.o
-.PHONY : dynamic_memory.c.o
+dynamic_mem2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_mem2.cpp.o
+.PHONY : dynamic_mem2.cpp.o
 
-dynamic_memory.i: dynamic_memory.c.i
-.PHONY : dynamic_memory.i
+dynamic_mem2.i: dynamic_mem2.cpp.i
+.PHONY : dynamic_mem2.i
 
 # target to preprocess a source file
-dynamic_memory.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.i
-.PHONY : dynamic_memory.c.i
+dynamic_mem2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_mem2.cpp.i
+.PHONY : dynamic_mem2.cpp.i
 
-dynamic_memory.s: dynamic_memory.c.s
-.PHONY : dynamic_memory.s
+dynamic_mem2.s: dynamic_mem2.cpp.s
+.PHONY : dynamic_mem2.s
 
 # target to generate assembly for a file
-dynamic_memory.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_memory.c.s
-.PHONY : dynamic_memory.c.s
+dynamic_mem2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/dynamic_mem2.cpp.s
+.PHONY : dynamic_mem2.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... basics_in_Cpp"
-	@echo "... dynamic_memory.o"
-	@echo "... dynamic_memory.i"
-	@echo "... dynamic_memory.s"
+	@echo "... dynamic_mem2.o"
+	@echo "... dynamic_mem2.i"
+	@echo "... dynamic_mem2.s"
 .PHONY : help
 
 
