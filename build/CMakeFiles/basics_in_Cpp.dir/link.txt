@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/basics_in_Cpp.dir/dynamic_mem2.cpp.o -o basics_in_Cpp 
