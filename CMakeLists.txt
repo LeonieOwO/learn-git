@@ -15,7 +15,7 @@
 	add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
 
 	# add an executabel and assign files to it
-	add_executable(basics_in_Cpp dynamic_mem2.cpp)
+	add_executable(basics_in_Cpp c++/inheritance.cpp)
 
 	#enable testing
 	#enable_testing()

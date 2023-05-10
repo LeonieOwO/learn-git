@@ -16,7 +16,4 @@ int main(void)
     student_print(&max);
     student_print(&maria);
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
+
