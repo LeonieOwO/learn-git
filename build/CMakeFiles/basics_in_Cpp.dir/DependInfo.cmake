@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspaces/learn-git/c++/inheritance.cpp" "CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.o" "gcc" "CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.o.d"
+  "/workspaces/learn-git/c++/unterricht6.cpp" "CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o" "gcc" "CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o.d"
   )
 
 # Targets to which this target links.

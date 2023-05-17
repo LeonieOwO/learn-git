@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.o -o basics_in_Cpp 
+/usr/bin/c++ CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o -o basics_in_Cpp 

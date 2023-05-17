@@ -129,29 +129,29 @@ basics_in_Cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/build
 .PHONY : basics_in_Cpp/fast
 
-c++/inheritance.o: c++/inheritance.cpp.o
-.PHONY : c++/inheritance.o
+c++/unterricht6.o: c++/unterricht6.cpp.o
+.PHONY : c++/unterricht6.o
 
 # target to build an object file
-c++/inheritance.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.o
-.PHONY : c++/inheritance.cpp.o
+c++/unterricht6.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o
+.PHONY : c++/unterricht6.cpp.o
 
-c++/inheritance.i: c++/inheritance.cpp.i
-.PHONY : c++/inheritance.i
+c++/unterricht6.i: c++/unterricht6.cpp.i
+.PHONY : c++/unterricht6.i
 
 # target to preprocess a source file
-c++/inheritance.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.i
-.PHONY : c++/inheritance.cpp.i
+c++/unterricht6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i
+.PHONY : c++/unterricht6.cpp.i
 
-c++/inheritance.s: c++/inheritance.cpp.s
-.PHONY : c++/inheritance.s
+c++/unterricht6.s: c++/unterricht6.cpp.s
+.PHONY : c++/unterricht6.s
 
 # target to generate assembly for a file
-c++/inheritance.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.s
-.PHONY : c++/inheritance.cpp.s
+c++/unterricht6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s
+.PHONY : c++/unterricht6.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... basics_in_Cpp"
-	@echo "... c++/inheritance.o"
-	@echo "... c++/inheritance.i"
-	@echo "... c++/inheritance.s"
+	@echo "... c++/unterricht6.o"
+	@echo "... c++/unterricht6.i"
+	@echo "... c++/unterricht6.s"
 .PHONY : help
 
 

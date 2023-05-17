@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.o"
-  "CMakeFiles/basics_in_Cpp.dir/c++/inheritance.cpp.o.d"
+  "CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o"
+  "CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o.d"
   "basics_in_Cpp"
   "basics_in_Cpp.pdb"
 )
