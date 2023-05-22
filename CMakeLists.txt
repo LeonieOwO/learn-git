@@ -15,7 +15,7 @@
 	add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
 
 	# add an executabel and assign files to it
-	add_executable(basics_in_Cpp c++/unterricht6.cpp)
+	add_executable(basics_in_Cpp c++/HA3.cpp)
 
 	#enable testing
 	#enable_testing()
