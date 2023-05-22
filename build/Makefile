@@ -129,29 +129,29 @@ basics_in_Cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/build
 .PHONY : basics_in_Cpp/fast
 
-c++/unterricht6.o: c++/unterricht6.cpp.o
-.PHONY : c++/unterricht6.o
+c++/HA3.o: c++/HA3.cpp.o
+.PHONY : c++/HA3.o
 
 # target to build an object file
-c++/unterricht6.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o
-.PHONY : c++/unterricht6.cpp.o
+c++/HA3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/HA3.cpp.o
+.PHONY : c++/HA3.cpp.o
 
-c++/unterricht6.i: c++/unterricht6.cpp.i
-.PHONY : c++/unterricht6.i
+c++/HA3.i: c++/HA3.cpp.i
+.PHONY : c++/HA3.i
 
 # target to preprocess a source file
-c++/unterricht6.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i
-.PHONY : c++/unterricht6.cpp.i
+c++/HA3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/HA3.cpp.i
+.PHONY : c++/HA3.cpp.i
 
-c++/unterricht6.s: c++/unterricht6.cpp.s
-.PHONY : c++/unterricht6.s
+c++/HA3.s: c++/HA3.cpp.s
+.PHONY : c++/HA3.s
 
 # target to generate assembly for a file
-c++/unterricht6.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s
-.PHONY : c++/unterricht6.cpp.s
+c++/HA3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/HA3.cpp.s
+.PHONY : c++/HA3.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... basics_in_Cpp"
-	@echo "... c++/unterricht6.o"
-	@echo "... c++/unterricht6.i"
-	@echo "... c++/unterricht6.s"
+	@echo "... c++/HA3.o"
+	@echo "... c++/HA3.i"
+	@echo "... c++/HA3.s"
 .PHONY : help
 
 
