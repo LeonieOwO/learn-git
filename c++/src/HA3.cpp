@@ -2,64 +2,46 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include "HA3.hpp"
 
-class Animal
-{
-    protected:
-    int num_feet = 0;
-    //virtual void feet() const = 0;
-    public:
-    auto get_num_of_feet() -> int
+    auto animal::get_num_of_feet() -> int
 {
     return num_feet;
 }
+    auto animal::get_speed() -> double
+{
+    return speed;
+}
+    auto animal::get_pos() -> double
+{
+    return position;
+}
+void animal::die()
+{
+    std::cout << "dying noises" << std::endl;
+}
+
+
     
-};
-
-/*class Spider : public Animal
-{
-    public:
-    explicit Spider();
+    spider::spider(const double speedi)
     {
     num_feet = 8;
-    };
-        void feet() const override
+    speed = speedi;    
+    }
+    void spider::move(double time) 
     {
-        std::cout << "8" << std::endl;
+        position += (time * speed);
+        std::cout << "crawl" << std::endl;
     }
 
-} ;*/
-class Spider : public Animal
-{
-   public:
-    Spider()
-    {
-    num_feet = 8;
-    }
-};
-
-
-
-class Mammal : public Animal
-{
-    public:
-    explicit Mammal(int feets)
+    mammal::mammal(const uint8_t feets,const double speedi)
     {
         num_feet = feets;
+        speed = speedi;
+
     }
-
-    /*void feet() const override
-    { 
-        std::cout << num_feet << std::endl;
-    }*/
-};
-
-auto main() -> int
-{
-    
-    Mammal groundhog = Mammal(4);
-    Spider tarantula;
-        std::cout << tarantula.get_num_of_feet() << std::endl;
-        std::cout << groundhog.get_num_of_feet() << std::endl;
-    return 0;
-}
+    void mammal::move(double time) 
+    {
+        position += (time * speed);
+        std::cout << "pirsch" << std::endl;
+    }

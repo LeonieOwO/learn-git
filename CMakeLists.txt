@@ -13,9 +13,19 @@
 
 	# add some compile options
 	add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
+	 
+	# add a library for your student structure
+    add_library(hw24_animals c++/src/HA3.cpp)
+    # add the includes to the library
+    target_include_directories(hw24_animals PUBLIC include)
 
 	# add an executabel and assign files to it
-	add_executable(basics_in_Cpp c++/src/HA3.cpp)
+	add_executable(basics_in_Cpp c++/src/main.cpp)
+
+	# add include directories to executable
+    target_include_directories(basics_in_Cpp PRIVATE include)
+    # link your libraries
+    target_link_libraries(basics_in_Cpp PRIVATE hw24_animals)
 
 	#enable testing
 	#enable_testing()
