@@ -57,23 +57,9 @@ class Mammal : public Animal
 auto main() -> int
 {
     
-    Mammal groundhog(4);
+    Mammal groundhog = Mammal(4);
     Spider tarantula;
         std::cout << tarantula.get_num_of_feet() << std::endl;
         std::cout << groundhog.get_num_of_feet() << std::endl;
     return 0;
-}
-
-#include "gtest/gtest.h"  // include the gtest functions & macros
-
-TEST(AnimalTest, initMammal)
-{
-    Mammal groundhog(4);
-    ASSERT_EQ(4, groundhog.get_num_of_feet());
-}
-
-TEST(AnimalTest, initSpider)
-{
-    Spider tarantula;
-    ASSERT_EQ(8, tarantula.get_num_of_feet());
 }

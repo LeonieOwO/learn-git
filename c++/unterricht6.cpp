@@ -5,18 +5,9 @@
 
 class Animal
 {
-    //std::string str_x;
     public:
     virtual void make_noise() const = 0;
-    //explicit Animal(const std::string &str_y) : str_x{str_y}{}
-    /*void operator+(const Animal &ca)
-    {
-        std::string A = str_x + ca.str_x;
-        std::string B = str_x + str_x;
-        std::string C = str_x + ca.str_x;
-        std::string D = ca.str_x + ca.str_x;
-        std::cout << "All possible additions:" << A << "," << B << ","<< C << ","<< D << std::endl;
-    }*/
+  
 };
 
 class bird;
@@ -24,18 +15,18 @@ class bird;
 class cat : public Animal
 {
     public:
-        void make_noise() const override
+        void make_noise() const
     {
         std::cout << "miau" << std::endl;
     }
     void operator+(const cat &)
     {
-        std::cout << " Cats play "<< std::endl;
+        std::cout << "Cats play "<< std::endl;
 
     }
         void operator+(const bird &)
     {
-        std::cout << " Cats hunts bird"<< std::endl;
+        std::cout << "Cat hunts bird"<< std::endl;
 
     }
 } ;
@@ -43,10 +34,10 @@ class cat : public Animal
 class bird : public Animal
 {
     public:
-        void make_noise() const override
-    {
-        std::cout << "miau" << std::endl;
-    }
+        void make_noise() const
+        {
+        std::cout << "chirp" << std::endl;
+        }
     void operator+(const cat &)
     {
 
@@ -66,9 +57,12 @@ auto main() -> int
 {
     cat black;
     bird blue;
-    //Animal cat("Cat");
-    //Animal bird("Bird");
     black + blue;
+    black + black;
+    blue + black;
+    blue + blue;
+    black.make_noise();
+    blue.make_noise();
     
     return 0;
 }
