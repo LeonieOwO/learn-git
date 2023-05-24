@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhw24_animals.a CMakeFiles/hw24_animals.dir/c++/src/HA3.cpp.o
+/usr/bin/ranlib libhw24_animals.a

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/basics_in_Cpp.dir/c++/src/HA3.cpp.o -o basics_in_Cpp 
+/usr/bin/c++ CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o -o basics_in_Cpp  libhw24_animals.a 

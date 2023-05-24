@@ -39,5 +39,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/hw24_animals.dir/DependInfo.cmake"
   "CMakeFiles/basics_in_Cpp.dir/DependInfo.cmake"
   )
