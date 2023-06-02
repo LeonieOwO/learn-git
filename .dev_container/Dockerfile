@@ -11,8 +11,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04
  && sudo apt-get update \
  && sudo apt-get install -y build-essential cmake gdb ninja-build libgtest-dev wget curl
  
-RUN \
-sudo apt-get install -y libopencv-dev
+#RUN \
+#sudo apt-get install -y libopencv-dev
+
 
  RUN \
  # bring in latest clang toolchain
@@ -37,7 +38,9 @@ RUN \
  sudo apt install -y curl \
  && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
  && sudo apt-get update \
+ && sudo apt-get install -y libopencv-dev\
  && sudo apt-get install -y nodejs
+
 
 # install marp
 RUN sudo npm install -g @marp-team/marp-cli

@@ -20,7 +20,20 @@
     #target_include_directories(hw24_animals PUBLIC include)
 
 	# add an executabel and assign files to it
-	add_executable(basics_in_Cpp c++/unterricht6.cpp)
+	#add_executable(basics_in_Cpp c++/exceptions.cpp)
+
+	find_package( OpenCV ) # alternative: find_package( OpenCV REQUIRED )
+
+    # continue only if opencv is found
+    if(OpenCV_FOUND)
+      # add executable for opencv hello world
+      add_executable(opencv_hello c++/unterricht7.cpp)
+      # declare the path to the image we want to work with
+      target_compile_definitions(opencv_hello PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+      # include and link all opencv stuff
+      target_include_directories(opencv_hello PUBLIC ${OpenCV_INCLUDE_DIRS} )
+      target_link_libraries( opencv_hello ${OpenCV_LIBRARIES})
+    endif()	
 
 	# add include directories to executable
     #target_include_directories(basics_in_Cpp PRIVATE include)

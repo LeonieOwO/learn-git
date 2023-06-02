@@ -24,7 +24,8 @@
                   "franneck94.c-cpp-runner",
                   "DavidAnson.vscode-markdownlint",
                   "mdickin.markdown-shortcuts",
-                  "ElecTreeFrying.insert-random-text"
+                  "ElecTreeFrying.insert-random-text",
+                  "simpletoolsdev.opencv-image"
               ]
           }
       }

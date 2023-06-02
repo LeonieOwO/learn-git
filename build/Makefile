@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named basics_in_Cpp
+# Target rules for targets named opencv_hello
 
 # Build rule for target.
-basics_in_Cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basics_in_Cpp
-.PHONY : basics_in_Cpp
+opencv_hello: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opencv_hello
+.PHONY : opencv_hello
 
 # fast build rule for target.
-basics_in_Cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/build
-.PHONY : basics_in_Cpp/fast
+opencv_hello/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_hello.dir/build.make CMakeFiles/opencv_hello.dir/build
+.PHONY : opencv_hello/fast
 
-c++/unterricht6.o: c++/unterricht6.cpp.o
-.PHONY : c++/unterricht6.o
+c++/unterricht7.o: c++/unterricht7.cpp.o
+.PHONY : c++/unterricht7.o
 
 # target to build an object file
-c++/unterricht6.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o
-.PHONY : c++/unterricht6.cpp.o
+c++/unterricht7.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_hello.dir/build.make CMakeFiles/opencv_hello.dir/c++/unterricht7.cpp.o
+.PHONY : c++/unterricht7.cpp.o
 
-c++/unterricht6.i: c++/unterricht6.cpp.i
-.PHONY : c++/unterricht6.i
+c++/unterricht7.i: c++/unterricht7.cpp.i
+.PHONY : c++/unterricht7.i
 
 # target to preprocess a source file
-c++/unterricht6.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i
-.PHONY : c++/unterricht6.cpp.i
+c++/unterricht7.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_hello.dir/build.make CMakeFiles/opencv_hello.dir/c++/unterricht7.cpp.i
+.PHONY : c++/unterricht7.cpp.i
 
-c++/unterricht6.s: c++/unterricht6.cpp.s
-.PHONY : c++/unterricht6.s
+c++/unterricht7.s: c++/unterricht7.cpp.s
+.PHONY : c++/unterricht7.s
 
 # target to generate assembly for a file
-c++/unterricht6.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s
-.PHONY : c++/unterricht6.cpp.s
+c++/unterricht7.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_hello.dir/build.make CMakeFiles/opencv_hello.dir/c++/unterricht7.cpp.s
+.PHONY : c++/unterricht7.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... basics_in_Cpp"
-	@echo "... c++/unterricht6.o"
-	@echo "... c++/unterricht6.i"
-	@echo "... c++/unterricht6.s"
+	@echo "... opencv_hello"
+	@echo "... c++/unterricht7.o"
+	@echo "... c++/unterricht7.i"
+	@echo "... c++/unterricht7.s"
 .PHONY : help
 
 

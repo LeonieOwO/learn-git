@@ -7,6 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake"
   "/usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake"
@@ -17,6 +21,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.25/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.25/Modules/Platform/Linux.cmake"
@@ -39,5 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/basics_in_Cpp.dir/DependInfo.cmake"
+  "CMakeFiles/opencv_hello.dir/DependInfo.cmake"
   )
