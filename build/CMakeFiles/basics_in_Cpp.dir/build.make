@@ -69,30 +69,29 @@ include CMakeFiles/basics_in_Cpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/basics_in_Cpp.dir/flags.make
 
-CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o: CMakeFiles/basics_in_Cpp.dir/flags.make
-CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o: /workspaces/learn-git/c++/src/main.cpp
-CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o: CMakeFiles/basics_in_Cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o -MF CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o.d -o CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o -c /workspaces/learn-git/c++/src/main.cpp
+CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o: CMakeFiles/basics_in_Cpp.dir/flags.make
+CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o: /workspaces/learn-git/c++/unterricht6.cpp
+CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o: CMakeFiles/basics_in_Cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o -MF CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o.d -o CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o -c /workspaces/learn-git/c++/unterricht6.cpp
 
-CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/learn-git/c++/src/main.cpp > CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.i
+CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/learn-git/c++/unterricht6.cpp > CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i
 
-CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/learn-git/c++/src/main.cpp -o CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.s
+CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/learn-git/c++/unterricht6.cpp -o CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s
 
 # Object files for target basics_in_Cpp
 basics_in_Cpp_OBJECTS = \
-"CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o"
+"CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o"
 
 # External object files for target basics_in_Cpp
 basics_in_Cpp_EXTERNAL_OBJECTS =
 
-basics_in_Cpp: CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o
+basics_in_Cpp: CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o
 basics_in_Cpp: CMakeFiles/basics_in_Cpp.dir/build.make
-basics_in_Cpp: libhw24_animals.a
 basics_in_Cpp: CMakeFiles/basics_in_Cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable basics_in_Cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/basics_in_Cpp.dir/link.txt --verbose=$(VERBOSE)

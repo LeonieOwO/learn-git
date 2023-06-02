@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hw24_animals
-
-# Build rule for target.
-hw24_animals: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw24_animals
-.PHONY : hw24_animals
-
-# fast build rule for target.
-hw24_animals/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw24_animals.dir/build.make CMakeFiles/hw24_animals.dir/build
-.PHONY : hw24_animals/fast
-
-#=============================================================================
 # Target rules for targets named basics_in_Cpp
 
 # Build rule for target.
@@ -142,53 +129,29 @@ basics_in_Cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/build
 .PHONY : basics_in_Cpp/fast
 
-c++/src/HA3.o: c++/src/HA3.cpp.o
-.PHONY : c++/src/HA3.o
+c++/unterricht6.o: c++/unterricht6.cpp.o
+.PHONY : c++/unterricht6.o
 
 # target to build an object file
-c++/src/HA3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw24_animals.dir/build.make CMakeFiles/hw24_animals.dir/c++/src/HA3.cpp.o
-.PHONY : c++/src/HA3.cpp.o
+c++/unterricht6.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.o
+.PHONY : c++/unterricht6.cpp.o
 
-c++/src/HA3.i: c++/src/HA3.cpp.i
-.PHONY : c++/src/HA3.i
-
-# target to preprocess a source file
-c++/src/HA3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw24_animals.dir/build.make CMakeFiles/hw24_animals.dir/c++/src/HA3.cpp.i
-.PHONY : c++/src/HA3.cpp.i
-
-c++/src/HA3.s: c++/src/HA3.cpp.s
-.PHONY : c++/src/HA3.s
-
-# target to generate assembly for a file
-c++/src/HA3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw24_animals.dir/build.make CMakeFiles/hw24_animals.dir/c++/src/HA3.cpp.s
-.PHONY : c++/src/HA3.cpp.s
-
-c++/src/main.o: c++/src/main.cpp.o
-.PHONY : c++/src/main.o
-
-# target to build an object file
-c++/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.o
-.PHONY : c++/src/main.cpp.o
-
-c++/src/main.i: c++/src/main.cpp.i
-.PHONY : c++/src/main.i
+c++/unterricht6.i: c++/unterricht6.cpp.i
+.PHONY : c++/unterricht6.i
 
 # target to preprocess a source file
-c++/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.i
-.PHONY : c++/src/main.cpp.i
+c++/unterricht6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.i
+.PHONY : c++/unterricht6.cpp.i
 
-c++/src/main.s: c++/src/main.cpp.s
-.PHONY : c++/src/main.s
+c++/unterricht6.s: c++/unterricht6.cpp.s
+.PHONY : c++/unterricht6.s
 
 # target to generate assembly for a file
-c++/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/src/main.cpp.s
-.PHONY : c++/src/main.cpp.s
+c++/unterricht6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basics_in_Cpp.dir/build.make CMakeFiles/basics_in_Cpp.dir/c++/unterricht6.cpp.s
+.PHONY : c++/unterricht6.cpp.s
 
 # Help Target
 help:
@@ -199,13 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... basics_in_Cpp"
-	@echo "... hw24_animals"
-	@echo "... c++/src/HA3.o"
-	@echo "... c++/src/HA3.i"
-	@echo "... c++/src/HA3.s"
-	@echo "... c++/src/main.o"
-	@echo "... c++/src/main.i"
-	@echo "... c++/src/main.s"
+	@echo "... c++/unterricht6.o"
+	@echo "... c++/unterricht6.i"
+	@echo "... c++/unterricht6.s"
 .PHONY : help
 
 

@@ -11,6 +11,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04
  && sudo apt-get update \
  && sudo apt-get install -y build-essential cmake gdb ninja-build libgtest-dev wget curl
  
+RUN \
+sudo apt-get install -y libopencv-dev
+
  RUN \
  # bring in latest clang toolchain
  wget https://apt.llvm.org/llvm.sh  \
