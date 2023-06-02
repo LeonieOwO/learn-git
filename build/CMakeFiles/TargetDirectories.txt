@@ -1,3 +1,0 @@
-/workspaces/learn-git/build/CMakeFiles/opencv_hello.dir
-/workspaces/learn-git/build/CMakeFiles/edit_cache.dir
-/workspaces/learn-git/build/CMakeFiles/rebuild_cache.dir

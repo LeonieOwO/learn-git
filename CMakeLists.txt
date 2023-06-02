@@ -27,12 +27,13 @@
     # continue only if opencv is found
     if(OpenCV_FOUND)
       # add executable for opencv hello world
-      add_executable(opencv_hello c++/unterricht7.cpp)
-      # declare the path to the image we want to work with
-      target_compile_definitions(opencv_hello PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
-      # include and link all opencv stuff
-      target_include_directories(opencv_hello PUBLIC ${OpenCV_INCLUDE_DIRS} )
-      target_link_libraries( opencv_hello ${OpenCV_LIBRARIES})
+      add_executable(opencv_canny c++/canny_edges.cpp)
+
+	  # declare the path to the image we want to work with
+	  target_compile_definitions(opencv_canny PRIVATE IMGPATH="${CMAKE_CURRENT_LIST_DIR}/c++" OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+	  # include and link all opencv stuff
+	  target_include_directories(opencv_canny PUBLIC ${OpenCV_INCLUDE_DIRS} )
+	  target_link_libraries( opencv_canny ${OpenCV_LIBRARIES})
     endif()	
 
 	# add include directories to executable
