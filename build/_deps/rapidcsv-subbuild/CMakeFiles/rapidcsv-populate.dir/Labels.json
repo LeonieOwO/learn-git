@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/CMakeFiles/rapidcsv-populate"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/CMakeFiles/rapidcsv-populate.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/CMakeFiles/rapidcsv-populate-complete.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-build.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-configure.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-download.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-install.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-patch.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-test.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/rapidcsv-subbuild/rapidcsv-populate-prefix/src/rapidcsv-populate-stamp/rapidcsv-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"rapidcsv-populate"
+		],
+		"name" : "rapidcsv-populate"
+	}
+}

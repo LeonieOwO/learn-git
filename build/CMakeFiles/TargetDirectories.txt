@@ -1,0 +1,6 @@
+/workspaces/learn-git/build/CMakeFiles/read_c.dir
+/workspaces/learn-git/build/CMakeFiles/read_b.dir
+/workspaces/learn-git/build/CMakeFiles/edit_cache.dir
+/workspaces/learn-git/build/CMakeFiles/rebuild_cache.dir
+/workspaces/learn-git/build/_deps/rapidcsv-build/CMakeFiles/edit_cache.dir
+/workspaces/learn-git/build/_deps/rapidcsv-build/CMakeFiles/rebuild_cache.dir

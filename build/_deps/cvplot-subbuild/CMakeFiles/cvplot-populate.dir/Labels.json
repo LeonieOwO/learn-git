@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/CMakeFiles/cvplot-populate"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/CMakeFiles/cvplot-populate.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/CMakeFiles/cvplot-populate-complete.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-build.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-configure.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-download.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-install.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-patch.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-test.rule"
+		},
+		{
+			"file" : "/workspaces/learn-git/build/_deps/cvplot-subbuild/cvplot-populate-prefix/src/cvplot-populate-stamp/cvplot-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cvplot-populate"
+		],
+		"name" : "cvplot-populate"
+	}
+}
