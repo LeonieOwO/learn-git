@@ -69,6 +69,12 @@
        GIT_TAG origin/master) # or whatever tag you want
     FetchContent_MakeAvailable(rapidcsv)
 
+    # download armadillo library and add it to the project
+	FetchContent_Declare(armadillo
+    URL https://sourceforge.net/projects/arma/files/armadillo-12.4.0.tar.xz
+    DOWNLOAD_EXTRACT_TIMESTAMP true)
+    FetchContent_MakeAvailable(armadillo)
+
 	# add executable for weather analysis
 	add_executable(read_c c++/src/weather_analysis.cpp)
 	target_include_directories(read_c PUBLIC ${OpenCV_INCLUDE_DIRS} ${cvplot_SOURCE_DIR}/CvPlot/inc)
@@ -76,7 +82,11 @@
     
 	add_executable(read_b c++/src/read.cpp)
 	target_compile_definitions(read_b PRIVATE RESOURCEPATH="${CMAKE_CURRENT_LIST_DIR}/c++/src")
-    target_link_libraries(read_b PUBLIC rapidcsv)
+    target_include_directories(read_b PUBLIC 
+		${OpenCV_INCLUDE_DIRS} 
+		${cvplot_SOURCE_DIR}/CvPlot/inc
+		${armadillo_SOURCE_DIR}/include)
+	target_link_libraries(read_b rapidcsv ${OpenCV_LIBRARIES} armadillo)
 
     endif()
 

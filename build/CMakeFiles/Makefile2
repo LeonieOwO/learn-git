@@ -66,17 +66,52 @@ CMAKE_BINARY_DIR = /workspaces/learn-git/build
 all: CMakeFiles/read_c.dir/all
 all: CMakeFiles/read_b.dir/all
 all: _deps/rapidcsv-build/all
+all: _deps/armadillo-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: _deps/rapidcsv-build/preinstall
+preinstall: _deps/armadillo-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/read_c.dir/clean
 clean: CMakeFiles/read_b.dir/clean
 clean: _deps/rapidcsv-build/clean
+clean: _deps/armadillo-build/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/armadillo-build
+
+# Recursive "all" directory target.
+_deps/armadillo-build/all: _deps/armadillo-build/CMakeFiles/armadillo.dir/all
+_deps/armadillo-build/all: _deps/armadillo-build/tests1/all
+.PHONY : _deps/armadillo-build/all
+
+# Recursive "preinstall" directory target.
+_deps/armadillo-build/preinstall: _deps/armadillo-build/tests1/preinstall
+.PHONY : _deps/armadillo-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/armadillo-build/clean: _deps/armadillo-build/CMakeFiles/armadillo.dir/clean
+_deps/armadillo-build/clean: _deps/armadillo-build/tests1/clean
+.PHONY : _deps/armadillo-build/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/armadillo-build/tests1
+
+# Recursive "all" directory target.
+_deps/armadillo-build/tests1/all: _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/all
+.PHONY : _deps/armadillo-build/tests1/all
+
+# Recursive "preinstall" directory target.
+_deps/armadillo-build/tests1/preinstall:
+.PHONY : _deps/armadillo-build/tests1/preinstall
+
+# Recursive "clean" directory target.
+_deps/armadillo-build/tests1/clean: _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/clean
+.PHONY : _deps/armadillo-build/tests1/clean
 
 #=============================================================================
 # Directory level rules for directory _deps/rapidcsv-build
@@ -100,7 +135,7 @@ _deps/rapidcsv-build/clean:
 CMakeFiles/read_c.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_c.dir/build.make CMakeFiles/read_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_c.dir/build.make CMakeFiles/read_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=3,4 "Built target read_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=6,7 "Built target read_c"
 .PHONY : CMakeFiles/read_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -123,15 +158,15 @@ CMakeFiles/read_c.dir/clean:
 # Target rules for target CMakeFiles/read_b.dir
 
 # All Build rule for target.
-CMakeFiles/read_b.dir/all:
+CMakeFiles/read_b.dir/all: _deps/armadillo-build/CMakeFiles/armadillo.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_b.dir/build.make CMakeFiles/read_b.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_b.dir/build.make CMakeFiles/read_b.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=1,2 "Built target read_b"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=4,5 "Built target read_b"
 .PHONY : CMakeFiles/read_b.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/read_b.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/read_b.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 0
 .PHONY : CMakeFiles/read_b.dir/rule
@@ -144,6 +179,58 @@ read_b: CMakeFiles/read_b.dir/rule
 CMakeFiles/read_b.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_b.dir/build.make CMakeFiles/read_b.dir/clean
 .PHONY : CMakeFiles/read_b.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/armadillo-build/CMakeFiles/armadillo.dir
+
+# All Build rule for target.
+_deps/armadillo-build/CMakeFiles/armadillo.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/CMakeFiles/armadillo.dir/build.make _deps/armadillo-build/CMakeFiles/armadillo.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/CMakeFiles/armadillo.dir/build.make _deps/armadillo-build/CMakeFiles/armadillo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=1,2,3 "Built target armadillo"
+.PHONY : _deps/armadillo-build/CMakeFiles/armadillo.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/armadillo-build/CMakeFiles/armadillo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/armadillo-build/CMakeFiles/armadillo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 0
+.PHONY : _deps/armadillo-build/CMakeFiles/armadillo.dir/rule
+
+# Convenience name for target.
+armadillo: _deps/armadillo-build/CMakeFiles/armadillo.dir/rule
+.PHONY : armadillo
+
+# clean rule for target.
+_deps/armadillo-build/CMakeFiles/armadillo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/CMakeFiles/armadillo.dir/build.make _deps/armadillo-build/CMakeFiles/armadillo.dir/clean
+.PHONY : _deps/armadillo-build/CMakeFiles/armadillo.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir
+
+# All Build rule for target.
+_deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/all: _deps/armadillo-build/CMakeFiles/armadillo.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/build.make _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/build.make _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/learn-git/build/CMakeFiles --progress-num=8,9 "Built target smoke_test"
+.PHONY : _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles 0
+.PHONY : _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/rule
+
+# Convenience name for target.
+smoke_test: _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/rule
+.PHONY : smoke_test
+
+# clean rule for target.
+_deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/build.make _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/clean
+.PHONY : _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"dev\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/learn-git/build/CMakeFiles /workspaces/learn-git/build//CMakeFiles/progress.marks
@@ -142,6 +187,32 @@ read_b/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_b.dir/build.make CMakeFiles/read_b.dir/build
 .PHONY : read_b/fast
 
+#=============================================================================
+# Target rules for targets named armadillo
+
+# Build rule for target.
+armadillo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 armadillo
+.PHONY : armadillo
+
+# fast build rule for target.
+armadillo/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/CMakeFiles/armadillo.dir/build.make _deps/armadillo-build/CMakeFiles/armadillo.dir/build
+.PHONY : armadillo/fast
+
+#=============================================================================
+# Target rules for targets named smoke_test
+
+# Build rule for target.
+smoke_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smoke_test
+.PHONY : smoke_test
+
+# fast build rule for target.
+smoke_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/build.make _deps/armadillo-build/tests1/CMakeFiles/smoke_test.dir/build
+.PHONY : smoke_test/fast
+
 c++/src/read.o: c++/src/read.cpp.o
 .PHONY : c++/src/read.o
 
@@ -197,9 +268,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... armadillo"
 	@echo "... read_b"
 	@echo "... read_c"
+	@echo "... smoke_test"
 	@echo "... c++/src/read.o"
 	@echo "... c++/src/read.i"
 	@echo "... c++/src/read.s"

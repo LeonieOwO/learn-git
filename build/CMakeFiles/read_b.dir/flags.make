@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRESOURCEPATH=\"/workspaces/learn-git/c++/src\"
 
-CXX_INCLUDES = -I/workspaces/learn-git/build/_deps/rapidcsv-src/src
+CXX_INCLUDES = -I/workspaces/learn-git/build/_deps/cvplot-src/CvPlot/inc -I/workspaces/learn-git/build/_deps/armadillo-src/include -I/workspaces/learn-git/build/_deps/rapidcsv-src/src -I/workspaces/learn-git/build/_deps/armadillo-build/tmp/include -isystem /usr/include/opencv4
 
 CXX_FLAGS = -Wall -std=gnu++14
 
